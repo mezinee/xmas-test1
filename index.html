@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="cs.css">
+    <meta charset="utf-8">
+    <title>2021 merry christmas!</title>
+    <style type="text/css">
+
+
+        body {
+		cursor: url("snowman.png"), auto;
+            background-color: #408155;
+            width: 1790px;
+            height: 950px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+
+        .new-corsur {
+    cursor: url(cursor.png), auto;
+}
+
+        .container {
+            position: fixed;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 220px;
+            margin-right: 220px;
+            margin-top: 150px;
+        }
+
+        .xmas {
+            margin-top: 120px;
+            animation: text-pop-up-top 2s cubic-bezier(.25, .46, .45, .94) both
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 170px;
+            margin-right: 150px;
+            margin-top: 12px;
+        }
+
+        .gift {
+            margin-top: 100px;
+            margin-right: 20px;
+            animation: motion1 0.8s linear 0s infinite alternate;
+            cursor: pointer;
+        }
+
+        .start {
+            margin-top: 70px;
+            cursor: pointer;
+        }
+
+        .bell {
+            margin-top: -150px;
+            animation: motion2 0.8s linear 0s infinite alternate;
+            cursor: pointer;
+        }
+
+        .cookie {
+            margin-top: 100px;
+            margin-left: 20px;
+            animation: motion1 0.8s linear 0s infinite alternate;
+            cursor: pointer;
+        }
+
+        .candy {
+            margin-top: -150px;
+            animation: motion2 0.8s linear 0s infinite alternate;
+            cursor: pointer;
+        }
+        .wreath {
+        	  animation: motion3 0.8s linear 0s infinite alternate;
+        	  cursor: pointer;
+        }
+        .socks {
+        	  animation: motion3 0.8s linear 0s infinite alternate;
+        	  cursor: pointer;
+        }
+
+        @keyframes motion1 {
+            from {
+                margin-top: 100px;
+            }
+
+            to {
+                margin-top: 130px;
+            }
+        }
+
+        @keyframes motion2 {
+            from {
+                margin-top: 0px;
+            }
+
+            to {
+                margin-top: 30px;
+            }
+        }
+
+            @keyframes motion3 {
+           from {
+               margin-top: 0px;
+            }
+
+            to {
+                margin-top: 30px;
+            }
+        }
+
+        @keyframes text-pop-up-top {
+            0% {
+                transform: translateY(0);
+                transform-origin: 50% 50%;
+                text-shadow: none
+            }
+
+            100% {
+                transform: translateY(-25px);
+                transform-origin: 50% 50%;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 30px rgba(0, 0, 0, .3)
+            }
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+    <div id="header" style="position:fixed; top:10px; left:0px; height:200px; right:0px;overflow:hidden;">
+        <img src="pt-top.png" width="1920px">
+    </div>
+    <div id="content" style="position:static; top:120px; bottom:100px; left:0px; right:0px; overflow:hidden;">
+        <div class="container1">
+            <div class="wreath"><img src="wreath.png" width="120px"></div>
+            <div class="xmas"><img src="xmas.png" width="845px"></div>
+            <div class="socks"><img src="socks.png" width="110px"></div>
+        </div>
+        <div class="container2">
+            <div class="bell"><img src="bell.png" width="135px"></div>
+            <div class="gift"><img src="gift.png" width="115px"></div>
+            <div class="start"><img src="btn_start.png" width="230px" id="st"></div>
+            <div class="cookie"><img src="cookie.png" width="120px"></div>
+            <div class="candy"><img src="candy.png" width="100px"></div>
+        </div>
+    </div>
+    <div id="footer" style="position:fixed; bottom:10px; height:130px; left:0px; right:0px; overflow:hidden;">
+        <img src="pt-bottom.png" width="1920px">
+    </div>
+
+    <script type="text/javascript">
+
+        st.onclick = function () {
+            location.href = "intro.html";
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

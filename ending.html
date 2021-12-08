@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2021 merry christmas!</title>
+	<style type="text/css">
+		body {
+			background-color: #bd2a34;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-left: 0;
+			margin-right: 0;
+			margin: 0;
+		}
+		.header {
+			position: fixed;			
+			display: flex;
+			justify-content: space-between;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  height: 150px;
+		  margin-bottom: 200px;
+		}
+		.container{
+			position: fixed;	
+			display: flex;
+			justify-content: space-between;
+			margin-top: 170px;
+			margin-left: 20px;
+			margin-right: 20px;
+			z-index: 3;
+			width: 100%;
+		}
+		.g1{
+			margin-left: 60px;
+		}
+
+		.g2{
+		}
+		.title-2 {
+			position: fixed;
+		}
+
+		.container2 {
+			margin-top: 400px;
+		}
+
+		.container3 {
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+
+		.container4 {
+			display: flex;
+			justify-content: center;
+		}
+
+		.container5 {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 200px;
+			margin-left: 500px;
+			margin-right: 500px;
+		}
+    	.g1 {
+    		margin-left: 50px;
+    	}
+
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="bgm" style="">
+					<div class="play" style="position: absolute; margin-top: 14px; margin-left: 8px;"><img src="btn_play.png" width="15px"></div>
+					<div class="bgmtitle" style="position: absolute; margin-top: 15px; margin-left: 85px;"><img src="bgm-title.png" width="205px"></div>
+					<div class="bgmbox" style="position: absolute;"><img src="bgm.png" width="350px"></div>
+			</div>
+			<div class="home" id="home" style="margin-right: 30px;"><img src="btn_home.png" width="130px"></div>
+		</div>	
+		<div class="title-2" style="position: absolute; z-index: 2;">
+			<img src="title-2.png" width="100%">
+		</div>
+	</div>
+
+	<div class="container2">
+	<div>
+		<div style="text-align: center; margin-bottom: 40px;"><img src="gif3.gif" width="200px"></div>
+		<div style="text-align: center; margin-bottom: 130px;"><img src="text8.png" width="250px"></div>
+	</div>
+
+	<div style="text-align: center; margin-bottom: 100px"><img src="bell.png" width="80px"></div>
+
+	<div style="margin-top: 200px; margin-bottom: 350px; text-align: center;"><img src="gif4.gif" width="70%"></div>
+	<div style="text-align: center; margin-bottom: 450px;"><img src="gif5.gif" width="85%"></div>
+	</div>
+
+	<div class="container3">
+		<div class="elfface" style="margin-right:30px; margin-top:150px;"><img src="elfface.png" width="110px"></div>
+		<div class="bubble" style="margin-bottom: 50px;"><img src="bubble7.png" width="500px"></div>
+	</div>
+
+	<div style="text-align:center; margin-bottom: 70px"class="drop-box" ondragover="dragover_handler(event);" ondrop="drop_handler(event);"><img src="tree.png" width="300px"></div>
+
+	<div class="container4" style="margin-bottom: 50px;">
+		<div id="draggable" class="g1"><img src="gift6.png" width="55px"></div>
+		<div id="draggable1" class="g1"><img src="bell2.png" width="60px"></div>
+		<div id="draggable2" class="g1"><img src="wreath2.png" width="55px"></div>
+		<div id="draggable3" class="g1"><img src="socks2.png" width="55px"></div>
+		<div id="draggable4" class="g1"><img src="cookie2.png" width="55px"></div>
+		<div id="draggable5" class="g1"><img src="candy2.png" width="50px"></div>
+		<div id="draggable6" class="g1"><img src="xmas2.png" width="120px"></div>
+	</div>
+
+
+	<div style="text-align:center; margin-bottom: 500px;"><img src="text9.png" width="300px"></div>
+
+	<div style="text-align:center; margin-bottom: 100px"><img src="xmas3.png" width="700px"></div>
+
+	<div class="container5" >
+		<div class="g2"><img src="roo4.png" width="100px"></div>
+		<div class="g2"><img src="elf2.png" width="100px"></div>
+		<div class="g2"><img src="santa2.png" width="100px"></div>
+	</div>
+
+	<div style="text-align:center; margin-top: 50px;"><img src="text10.png" width="500px"></div>
+
+	<div style="text-align:center; margin-top: 150px; padding-bottom: 50px;"><img src="btn_send.png" width="190px"></div>
+
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	  home.onclick = function(){
+  	location.href = "index.html";
+  }
+  function drag_handler(event) {
+//  ondrag =  드래그할때 동작 
+    console.log("Drag");
+	}
+function dragover_handler(event) {
+  //ondragover = draggable 엘리먼트가 drop영역위에 올라가면 
+   console.log("dragOver");
+   event.preventDefault();
+}
+        
+function drop_handler(event) {
+   document.getElementsByClassName("drag-box")[0].style.top=event.layerY+"px";
+   document.getElementsByClassName("drag-box")[0].style.left=event.layerX+"px";
+    event.preventDefault();
+}
+
+function drop_handler(event) {
+   document.getElementsByClassName("drag-box1")[0].style.top=event.layerY+"px";
+   document.getElementsByClassName("drag-box1")[0].style.left=event.layerX+"px";
+    event.preventDefault();
+}
+
+function drop_handler(event) {
+   document.getElementsByClassName("drag-box")[0].style.top=event.layerY+"px";
+   document.getElementsByClassName("drag-box")[0].style.left=event.layerX+"px";
+    event.preventDefault();
+}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable1" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#draggable4" ).draggable();
+    $( "#draggable5" ).draggable();
+    $( "#draggable6" ).draggable();
+
+  } );
+  </script>
+</html>

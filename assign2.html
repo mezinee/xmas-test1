@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cs.css">
+	<meta charset="utf-8">
+	<title>2021 merry christmas!</title>
+<style type="text/css">
+	body {
+			background-color: #bd2a34;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-left: 0;
+			margin-right: 0;
+			margin: 0;
+		}
+		.header {
+			position: fixed;			
+			display: flex;
+			justify-content: space-between;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  height: 150px;
+		  margin-bottom: 200px;
+		}
+		.container{
+			position: fixed;	
+			display: flex;
+			justify-content: space-between;
+			margin-top: 170px;
+			margin-left: 20px;
+			margin-right: 20px;
+			z-index: 3;
+			width: 100%;
+		}
+				.title-2 {
+			position: fixed;
+		}
+
+	.container1 {
+		display: flex;
+		justify-content: space-between; 
+		margin-top: 300px;
+		margin-right: 750px;
+		margin-left: 645px;
+	}
+	.elf {
+		margin-left: 30px;
+	}
+	.bubble {
+		margin-left: 15px;
+		margin-top: -60px;
+	}
+	.container3 {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 160px;
+		margin-left: 650px;
+		margin-right: 650px;
+		padding-bottom: 80px;
+	}
+
+</style>
+
+
+
+
+</head>
+<body>
+<div class="header">
+		<div class="container">
+			<div class="bgm" style="">
+					<div class="play" style="position: absolute; margin-top: 14px; margin-left: 8px;"><img src="btn_play.png" width="15px"></div>
+					<div class="bgmtitle" style="position: absolute; margin-top: 15px; margin-left: 85px;"><img src="bgm-title.png" width="205px"></div>
+					<div class="bgmbox" style="position: absolute;"><img src="bgm.png" width="350px"></div>
+			</div>
+		<div class="home" id="home" style="margin-right: 30px;"><img src="btn_home.png" width="130px"></div>	
+		</div>	
+			<div class="title-2" style="position: absolute; z-index: 1;">
+		<img src="title-2.png" width="100%">
+			</div>
+	</div>
+
+
+	<div>
+		<div class="astext2" style="margin-top: 380px; text-align: center;"><img src="astext2.png" width="1200px"></div>
+	</div>
+
+	<div class="container1">
+		<div class="elfface"><img src="elfface.png" width="110ppx"></div>
+		<div class="bubble"><img src="bubble3.png" width="500px"></div>
+	</div>
+	<div style="text-align: center; margin-top: 280px"><img src="receipt.png" width="300px"></div>
+	<div id="order" style="text-align: center; margin-top: 50px"><img src="btn_order.png" width="170px"></div>
+	<div style="text-align: center; margin-top: 30px"><img src="text4.png" width="420px">
+		</div>
+	<div style="text-align: center;"><img id="result" src="result2.png" width="1000px"></div>
+
+
+
+	<div class="container3">
+		<div class="back" id="back"><img src="btn_back.png" width="190px"></div>
+		<div class="next" id="next"><img src="btn_next.png" width="190px"></div>
+	</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+	
+  home.onclick = function(){
+  	location.href = "index.html";
+  }
+
+  back.onclick = function(){
+  	location.href = "assign1.html";
+  }
+
+  next.onclick = function(){
+  	location.href = "assign3.html";
+  }
+
+  order.onclick = function() {
+  	document.getElementById('result').src = 'gif2.gif'
+  }
+
+	
+</script>
+
+
+</html>
